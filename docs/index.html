@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="General Problem Solver: history, means-ends analysis and an interactive goal-stack planning laboratory."
+    />
+    <title>GPS — General Problem Solver</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      try {
+        var t = localStorage.getItem("gps-theme");
+        if (t !== "light" && t !== "dark")
+          t = matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.dataset.theme = t;
+        document.querySelector('meta[name="theme-color"]').content =
+          t === "dark" ? "#16151a" : "#ffffff";
+      } catch {
+        document.documentElement.dataset.theme = matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches
+          ? "dark"
+          : "light";
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index--Fxfo6Ym.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BkYRvNCW.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

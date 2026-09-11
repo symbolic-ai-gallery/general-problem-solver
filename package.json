@@ -1,0 +1,43 @@
+{
+  "name": "general-problem-solver",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@11.23.0",
+  "volta": {
+    "node": "24.19.0",
+    "pnpm": "11.23.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "format": "prettier --write src tests documents README.md THIRD_PARTY_NOTICES.md package.json vite.config.ts tsconfig.json index.html"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.0.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-bottom-fixed": "^0.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=24.15.0 <25",
+    "pnpm": ">=11 <12"
+  }
+}
